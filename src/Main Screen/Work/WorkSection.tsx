@@ -4,29 +4,24 @@ import styled from "styled-components/macro";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import Skills from "./Skills";
-import colours from "../../Styles/Colours";
+import WorkSegment from "./WorkSegment";
 
-const WorkWrap = styled.section`
+const WorkWrap = styled.div`
   display: flex;
-`;
-
-const WorkSegment = styled.div`
-  border-left: 1px solid ${colours.highlight};
-  border-right: 1px solid ${colours.highlight};
-
-  overflow-y: scroll;
+  width: 85%;
+  justify-content: space-evenly;
 `;
 
 const WorkSection = () => {
   return (
     <WorkWrap>
-      <WorkSegment>
+      <WorkSegment title="Experience">
         <Experience />
       </WorkSegment>
-      <WorkSegment>
+      <WorkSegment title="Projects">
         <Projects />
       </WorkSegment>
-      <WorkSegment>
+      <WorkSegment title="Skills">
         <Skills />
       </WorkSegment>
     </WorkWrap>
