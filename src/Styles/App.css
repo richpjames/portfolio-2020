@@ -25,3 +25,10 @@ a {
   margin: 0;
   padding: 0;
 }
+
+h1 {
+  line-height: 25px;
+}
+h3 {
+  line-height: 18px;
+}
