@@ -21,7 +21,7 @@ h4,
 h5,
 h6,
 a {
-  color: white;
+  color: #f3f4f2;
   margin: 0;
   padding: 0;
 }
@@ -31,4 +31,7 @@ h1 {
 }
 h3 {
   line-height: 18px;
+}
+p {
+  font-size: 21px;
 }
