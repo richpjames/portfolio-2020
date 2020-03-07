@@ -1,5 +1,6 @@
 const colours = {
-  text: "#FFFFFF"
+  text: "#FFFFFF",
+  highlight: "#f5cb5c"
 };
 
 export default colours;
