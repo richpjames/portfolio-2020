@@ -2,37 +2,54 @@ import React from "react";
 import styled from "styled-components/macro";
 import { Github, Linkedin, Contact } from "grommet-icons";
 
-const HeaderWrap = styled.header``;
+import colours from "../../Styles/Colours";
 
-const LinksWrap = styled.nav``;
+const HeaderWrap = styled.header`
+  display: flex;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+`;
+const DescritionWrap = styled.div``;
+
+const LinksWrap = styled.nav`
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+`;
+
+const IconLink = styled.a`
+  margin-top: 10px;
+`;
 
 const Header = () => {
   return (
     <HeaderWrap>
-      <h1>Richard James</h1>
-      <h2>Front End Developer</h2>
+      <DescritionWrap>
+        <h1>Richard James</h1>
+        <h2>Front End Developer</h2>
+      </DescritionWrap>
       <LinksWrap>
-        <a
+        <IconLink
           aria-label="Github link"
           href="https://github.com/richpjames/"
-          color="#000000"
         >
-          <Github aria-label="Github icon" />
-        </a>
-        <a
+          <Github aria-label="Github icon" color={`${colours.text}`} />
+        </IconLink>
+        <IconLink
           aria-label="LinkedIn link"
           href="https://linkedin.com/in/richard-p-james/"
-          color="#000000"
         >
-          <Linkedin aria-label="LinkedIn icon" />
-        </a>
-        <a
+          <Linkedin aria-label="LinkedIn icon" color={`${colours.text}`} />
+        </IconLink>
+        <IconLink
           aria-label="Contact link"
           href="https://richjames.co.uk/contact/"
-          color="#000000"
         >
-          <Contact />
-        </a>
+          <Contact color={`${colours.text}`} />
+        </IconLink>
       </LinksWrap>
     </HeaderWrap>
   );
