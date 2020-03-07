@@ -3,6 +3,9 @@ import styled from "styled-components/macro";
 
 const IconLink = styled.a`
   margin-top: 10px;
+  :first-child {
+    margin-top: 0;
+  }
 `;
 
 const LinkIcon: React.FC<IconLinkProps> = (props: IconLinkProps) => {
