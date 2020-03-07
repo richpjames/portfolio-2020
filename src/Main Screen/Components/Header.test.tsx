@@ -9,4 +9,9 @@ describe("Header", () => {
 
     expect(getByText("Richard James")).toBeInTheDocument();
   });
+  it(`displays the text "Front End Developer"`, () => {
+    const { getByText } = render(<Header />);
+
+    expect(getByText("Front End Developer")).toBeInTheDocument();
+  });
 });
