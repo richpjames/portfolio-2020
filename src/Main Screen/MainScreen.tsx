@@ -8,7 +8,11 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
 
-const MainScreenWrap = styled.div``;
+const MainScreenWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 const MainScreen = () => {
   return (
