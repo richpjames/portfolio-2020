@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
+import CVLink from "./CVLink";
 
 const BioWrap = styled.section`
   height: 200px;
@@ -9,6 +10,7 @@ const BioWrap = styled.section`
 `;
 const SecondSection = styled.p`
   margin-top: 2%;
+  margin-bottom: 1.5%;
 `;
 
 const Bio = () => {
@@ -20,8 +22,9 @@ const Bio = () => {
         life.
       </p>
       <SecondSection>
-        I love leveraging tech to create elegant solutions to difficult problems
+        I love to create elegant solutions to difficult problems
       </SecondSection>
+      <CVLink />
     </BioWrap>
   );
 };
