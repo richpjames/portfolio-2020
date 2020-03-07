@@ -3,6 +3,7 @@ import styled from "styled-components/macro";
 import { Github, Linkedin, Contact } from "grommet-icons";
 
 import colours from "../../Styles/Colours";
+import LinkIcon from "./LinkIcon";
 
 const HeaderWrap = styled.header`
   display: flex;
@@ -11,7 +12,12 @@ const HeaderWrap = styled.header`
   margin-right: auto;
   margin-top: 1%;
 `;
-const DescritionWrap = styled.div``;
+const NameWrap = styled.h1`
+  text-decoration: underline;
+  text-decoration-color: ${colours.highlight};
+`;
+
+const DescriptionWrap = styled.div``;
 
 const LinksWrap = styled.nav`
   margin-left: auto;
@@ -20,36 +26,40 @@ const LinksWrap = styled.nav`
   align-self: center;
 `;
 
-const IconLink = styled.a`
-  margin-top: 10px;
-`;
+const icons: IconLinkProps[] = [
+  {
+    link: "https://github.com/richpjames/",
+    ariaLabel: "Github link",
+    icon: <Github color={`${colours.highlight}`} />
+  },
+  {
+    link: "https://richjames.co.uk/contact/",
+    ariaLabel: "Contact link",
+    icon: <Contact color={`${colours.highlight}`} />
+  },
+  {
+    link: "https://linkedin.com/in/richard-p-james/",
+    ariaLabel: "LinkedIn link",
+    icon: <Linkedin color={`${colours.highlight}`} />
+  }
+];
 
 const Header = () => {
   return (
     <HeaderWrap>
-      <DescritionWrap>
-        <h1>Richard James</h1>
+      <DescriptionWrap>
+        <NameWrap>Richard James</NameWrap>
         <h2>Front End Developer</h2>
-      </DescritionWrap>
+      </DescriptionWrap>
       <LinksWrap>
-        <IconLink
-          aria-label="Github link"
-          href="https://github.com/richpjames/"
-        >
-          <Github aria-label="Github icon" color={`${colours.text}`} />
-        </IconLink>
-        <IconLink
-          aria-label="LinkedIn link"
-          href="https://linkedin.com/in/richard-p-james/"
-        >
-          <Linkedin aria-label="LinkedIn icon" color={`${colours.text}`} />
-        </IconLink>
-        <IconLink
-          aria-label="Contact link"
-          href="https://richjames.co.uk/contact/"
-        >
-          <Contact color={`${colours.text}`} />
-        </IconLink>
+        {icons.map((icon, i) => (
+          <LinkIcon
+            link={icon.link}
+            ariaLabel={icon.ariaLabel}
+            icon={icon.icon}
+            key={i}
+          />
+        ))}
       </LinksWrap>
     </HeaderWrap>
   );
