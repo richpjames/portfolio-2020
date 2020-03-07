@@ -21,4 +21,13 @@ describe("Header", () => {
     expect(iconComponent).toHaveProperty("href");
     expect(iconComponent).toContainHTML("https://github.com/richpjames/");
   });
+  it(`LinkedIn icon has link to the correct page`, () => {
+    const { getByLabelText } = render(<Header />);
+
+    const iconComponent = getByLabelText("LinkedIn link");
+    expect(iconComponent).toHaveProperty("href");
+    expect(iconComponent).toContainHTML(
+      "https://linkedin.com/in/richard-p-james"
+    );
+  });
 });
