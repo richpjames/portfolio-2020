@@ -2,7 +2,7 @@
 
 A portfolio for [Richard James](https://richjames.co.uk) - a front end developer living in Todmorden, Yorkshire.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Built with Typescript, React, Create React App & Styled Components.
 
 ## Available Scripts
 
