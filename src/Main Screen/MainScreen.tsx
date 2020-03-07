@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components/macro";
 
 import Bio from "./Components/Bio";
-import Header from "./Components/Header";
-import Experience from "./Components/Experience";
-import Skills from "./Components/Skills";
-import Projects from "./Components/Projects";
+import Header from "./Header/Header";
+import Experience from "./Work/Experience";
+import Skills from "./Work/Skills";
+import Projects from "./Work/Projects";
 import Footer from "./Components/Footer";
 
 const MainScreenWrap = styled.div`
