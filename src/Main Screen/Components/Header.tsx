@@ -60,9 +60,14 @@ const icons: IconLinkProps[] = [
   }
 ];
 
-const Header = () => {
+interface IProps {
+  title: string;
+}
+
+const Header: React.FC<IProps> = (props: IProps) => {
+  const { title } = props;
   return (
-    <HeaderWrap>
+    <HeaderWrap title={title}>
       <DescriptionWrap>
         <NameWrap>Richard James</NameWrap>
         <FEDWrap>Front End Developer</FEDWrap>

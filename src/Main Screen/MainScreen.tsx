@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components/macro";
 
 import Bio from "./Components/Bio";
 import Header from "./Components/Header";
@@ -7,16 +8,18 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
 
+const MainScreenWrap = styled.div``;
+
 const MainScreen = () => {
   return (
-    <>
-      <Header />
+    <MainScreenWrap>
+      <Header title="header" />
       <Bio />
       <Skills />
       <Experience />
       <Projects />
       <Footer />
-    </>
+    </MainScreenWrap>
   );
 };
 
