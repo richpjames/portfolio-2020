@@ -3,9 +3,7 @@ import styled from "styled-components/macro";
 
 import Bio from "./Components/Bio";
 import Header from "./Header/Header";
-import Experience from "./Work/Experience";
-import Skills from "./Work/Skills";
-import Projects from "./Work/Projects";
+import WorkSection from "./Work/WorkSection";
 import Footer from "./Components/Footer";
 
 const MainScreenWrap = styled.div`
@@ -19,9 +17,7 @@ const MainScreen = () => {
     <MainScreenWrap>
       <Header title="header" />
       <Bio />
-      <Skills />
-      <Experience />
-      <Projects />
+      <WorkSection />
       <Footer />
     </MainScreenWrap>
   );
