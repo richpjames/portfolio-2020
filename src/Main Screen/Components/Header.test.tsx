@@ -30,4 +30,11 @@ describe("Header", () => {
       "https://linkedin.com/in/richard-p-james"
     );
   });
+  it(`Contact icon has link to the correct page`, () => {
+    const { getByLabelText } = render(<Header />);
+
+    const iconComponent = getByLabelText("Contact link");
+    expect(iconComponent).toHaveProperty("href");
+    expect(iconComponent).toContainHTML("https://richjames.co.uk/contact");
+  });
 });
