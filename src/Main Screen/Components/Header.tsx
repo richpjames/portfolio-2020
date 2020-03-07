@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
 import { Github, Linkedin, Contact } from "grommet-icons";
 
 import colours from "../../Styles/Colours";
-import LinkIcon from "./LinkIcon";
+import LinkIcon from "../../Common/LinkIcon";
 
 const HeaderWrap = styled.header`
   display: flex;
@@ -12,12 +12,28 @@ const HeaderWrap = styled.header`
   margin-right: auto;
   margin-top: 1%;
 `;
+
 const NameWrap = styled.h1`
-  text-decoration: underline;
-  text-decoration-color: ${colours.highlight};
+  position: relative;
+  :after {
+    content: "";
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    bottom: -8.5px;
+    border-width: 0 0 2.5px;
+    border-style: solid;
+    border-color: ${colours.highlight};
+  }
 `;
 
-const DescriptionWrap = styled.div``;
+const FEDWrap = styled.h3`
+  margin-top: 10px;
+  text-align: center;
+`;
+const DescriptionWrap = styled.div`
+  align-self: center;
+`;
 
 const LinksWrap = styled.nav`
   margin-left: auto;
@@ -49,7 +65,7 @@ const Header = () => {
     <HeaderWrap>
       <DescriptionWrap>
         <NameWrap>Richard James</NameWrap>
-        <h2>Front End Developer</h2>
+        <FEDWrap>Front End Developer</FEDWrap>
       </DescriptionWrap>
       <LinksWrap>
         {icons.map((icon, i) => (
