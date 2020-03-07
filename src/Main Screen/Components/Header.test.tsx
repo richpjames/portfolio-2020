@@ -14,4 +14,11 @@ describe("Header", () => {
 
     expect(getByText("Front End Developer")).toBeInTheDocument();
   });
+  it(`Github icon has link to the correct page`, () => {
+    const { getByLabelText } = render(<Header />);
+
+    const iconComponent = getByLabelText("Github link");
+    expect(iconComponent).toHaveProperty("href");
+    expect(iconComponent).toContainHTML("https://github.com/richpjames/");
+  });
 });
