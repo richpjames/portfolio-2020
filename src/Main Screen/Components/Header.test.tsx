@@ -35,6 +35,6 @@ describe("Header", () => {
 
     const iconComponent = getByLabelText("Contact link");
     expect(iconComponent).toHaveProperty("href");
-    expect(iconComponent).toContainHTML("https://richjames.co.uk/contact");
+    expect(iconComponent).toContainHTML("mailto:rich@richjames.co.uk");
   });
 });
