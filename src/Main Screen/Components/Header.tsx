@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Github } from "grommet-icons";
+import { Github, Linkedin, Contact } from "grommet-icons";
 
 const HeaderWrap = styled.header``;
 
@@ -17,14 +17,21 @@ const Header = () => {
           href="https://github.com/richpjames/"
           color="#000000"
         >
-          <Github />
+          <Github aria-label="Github icon" />
         </a>
         <a
           aria-label="LinkedIn link"
           href="https://linkedin.com/in/richard-p-james/"
           color="#000000"
         >
-          <Github />
+          <Linkedin aria-label="LinkedIn icon" />
+        </a>
+        <a
+          aria-label="Contact link"
+          href="https://richjames.co.uk/contact/"
+          color="#000000"
+        >
+          <Contact />
         </a>
       </LinksWrap>
     </HeaderWrap>
