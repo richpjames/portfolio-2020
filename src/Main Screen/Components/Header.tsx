@@ -19,6 +19,13 @@ const Header = () => {
         >
           <Github />
         </a>
+        <a
+          aria-label="LinkedIn link"
+          href="https://linkedin.com/in/richard-p-james/"
+          color="#000000"
+        >
+          <Github />
+        </a>
       </LinksWrap>
     </HeaderWrap>
   );
