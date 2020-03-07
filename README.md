@@ -1,6 +1,6 @@
 # Rich James Portfolio
 
-A portfolio for Richard James - a front end developer living in Todmorden, Yorkshire.
+A portfolio for [Richard James](https://richjames.co.uk) - a front end developer living in Todmorden, Yorkshire.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
