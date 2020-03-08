@@ -1,29 +1,62 @@
 import React from "react";
-import { Volume, Troubleshoot, Test, Archive, Brush } from "grommet-icons";
+import { Troubleshoot, Test, Archive, Brush, BlockQuote } from "grommet-icons";
+import styled from "styled-components/macro";
+
 import colours from "../../Styles/Colours";
+
+const SkillsList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+`;
+
+const Skill = styled.span`
+  margin-top: 5px;
+  margin-bottom: 5px;
+`;
+
+const SkillsSegment = styled.div`
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+`;
 
 const Skills = () => {
   return (
-    <ul>
-      <li>
-        <Volume color={colours.text} />
-        JavaScript, Typescript, Node, Dart
-      </li>
-      <li>
+    <SkillsList>
+      <SkillsSegment>
+        <BlockQuote color={colours.text} />
+
+        <h3>Languages</h3>
+        <Skill>JavaScript, Typescript, Dart</Skill>
+      </SkillsSegment>
+      <SkillsSegment>
         <Troubleshoot color={colours.text} />
-        React, Flutter, HTML, CSS, Styled Components
-      </li>
-      <li>
-        <Test color={colours.text} /> Jest, Cypress, Chai, Mocha
-      </li>
-      <li>
+
+        <h3>Frameworks</h3>
+        <Skill>React, Flutter, Node, HTML, CSS</Skill>
+      </SkillsSegment>
+      <SkillsSegment>
+        <Test color={colours.text} />
+
+        <h3>Testing</h3>
+        <Skill>Jest, Cypress, Testing Library, Chai, Mocha</Skill>
+      </SkillsSegment>
+      <SkillsSegment>
         <Archive color={colours.text} />
-        Git and Github
-      </li>
-      <li>
-        <Brush color={colours.text} /> Adobe Photoshop and XD
-      </li>
-    </ul>
+
+        <h3>Version Control</h3>
+        <Skill>Git and Github</Skill>
+      </SkillsSegment>
+      <SkillsSegment>
+        <Brush color={colours.text} />
+
+        <h3>Design</h3>
+        <Skill>Adobe Photoshop and XD</Skill>
+      </SkillsSegment>
+    </SkillsList>
   );
 };
 
