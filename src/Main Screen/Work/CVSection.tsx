@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components/macro";
 
 import Experiences from "./Experiences";
-import Projects from "./Projects";
+// import Projects from "./Projects";
 import Skills from "./Skills";
 import WorkSegment from "./WorkSegment";
 
