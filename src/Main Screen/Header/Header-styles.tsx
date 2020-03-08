@@ -8,6 +8,7 @@ export const HeaderWrap = styled.header`
   margin-right: auto;
   margin-top: 1%;
   height: 15vh;
+  align-items: center;
   @media only screen and (max-width: 600px) {
     margin-top: 20px;
     flex-direction: column;
@@ -47,7 +48,7 @@ export const DescriptionWrap = styled.div`
   }
 `;
 
-export const LinksWrap = styled.nav`
+export const ExternalLinksWrap = styled.nav`
   margin-left: auto;
   display: flex;
   flex-direction: column;
@@ -58,5 +59,17 @@ export const LinksWrap = styled.nav`
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
+  }
+`;
+
+export const InternalLinksWrap = styled.nav`
+  font-size: 20.5px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 15%;
+  margin-left: 41%;
+  margin-right: 15%;
+  @media only screen and (max-width: 600px) {
+    display: none;
   }
 `;
