@@ -16,10 +16,10 @@ const WorkWrap = styled.section`
 const WorkSection = () => {
   return (
     <WorkWrap>
-      <WorkSegment title="Skills" underlineLength="75px">
+      <WorkSegment title="Skills" underlineLength="55px">
         <Skills />
       </WorkSegment>
-      <WorkSegment title="Experience" underlineLength="150px">
+      <WorkSegment title="Experience" underlineLength="125px">
         <Experience />
       </WorkSegment>
       <WorkSegment title="Projects" underlineLength="110px">
