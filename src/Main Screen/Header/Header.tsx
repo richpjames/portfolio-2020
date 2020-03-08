@@ -8,7 +8,8 @@ import {
   DescriptionWrap,
   NameWrap,
   SubtitleWrap,
-  LinksWrap
+  ExternalLinksWrap,
+  InternalLinksWrap
 } from "./Header-styles";
 
 interface IProps {
@@ -23,7 +24,11 @@ const Header: React.FC<IProps> = (props: IProps) => {
         <NameWrap>Richard James</NameWrap>
         <SubtitleWrap>Front End Developer</SubtitleWrap>
       </DescriptionWrap>
-      <LinksWrap>
+      <InternalLinksWrap>
+        <a href="#skills">Skills</a>
+        <a href="#work-experience">Work</a>
+      </InternalLinksWrap>
+      <ExternalLinksWrap>
         {icons.map((icon, i) => (
           <LinkIcon
             link={icon.link}
@@ -32,7 +37,7 @@ const Header: React.FC<IProps> = (props: IProps) => {
             key={i}
           />
         ))}
-      </LinksWrap>
+      </ExternalLinksWrap>
     </HeaderWrap>
   );
 };
