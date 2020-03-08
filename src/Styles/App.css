@@ -36,3 +36,7 @@ h3 {
 p {
   font-size: 21px;
 }
+ul {
+  list-style: none;
+  padding-left: 0;
+}
