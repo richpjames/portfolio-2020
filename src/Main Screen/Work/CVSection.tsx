@@ -22,9 +22,10 @@ const CVSection = () => {
       <WorkSegment title="Experience" underlineLength="125px">
         <Experiences />
       </WorkSegment>
-      <WorkSegment title="Projects" underlineLength="110px">
+      {/* TODO Projects Section */}
+      {/* <WorkSegment title="Projects" underlineLength="110px">
         <Projects />
-      </WorkSegment>
+      </WorkSegment> */}
     </WorkWrap>
   );
 };
