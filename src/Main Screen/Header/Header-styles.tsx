@@ -3,7 +3,7 @@ import colours from "../../Styles/Colours";
 
 export const HeaderWrap = styled.header`
   display: flex;
-  width: 95%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1%;
