@@ -4,7 +4,6 @@ import styled from "styled-components/macro";
 import colours from "../../Styles/Colours";
 
 const WorkSegmentWrap = styled.div`
-  overflow-y: scroll;
   padding-left: 1.5%;
 `;
 const Title = styled.h2<{ underlineLength: string }>`
