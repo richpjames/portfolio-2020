@@ -7,7 +7,7 @@ const ExperienceWrap = styled.section`
   margin-top: 3%;
 `;
 
-const Experience = () => {
+const Experiences = () => {
   return (
     <ExperienceWrap>
       <ExperienceBlock
@@ -83,4 +83,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Experiences;
