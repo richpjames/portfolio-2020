@@ -3,13 +3,13 @@ import styled from "styled-components";
 
 import ExperienceBlock from "./ExperienceBlock";
 
-const ExperienceWrap = styled.section`
+const ExperienceWrap = styled.section<{ id: string }>`
   margin-top: 3%;
 `;
 
 const Experiences = () => {
   return (
-    <ExperienceWrap>
+    <ExperienceWrap id="work-experience">
       <ExperienceBlock
         title="Software Developer / MyBuzz Technologies"
         date="August 2019 - Present"

@@ -13,7 +13,7 @@ import styled from "styled-components/macro";
 
 import colours from "../../Styles/Colours";
 
-const SkillsList = styled.div`
+const SkillsList = styled.div<{ id: string }>`
   display: flex;
   flex-wrap: wrap;
   height: 60vh;
@@ -47,7 +47,7 @@ const SkillsSegment = styled.div`
 
 const Skills = () => {
   return (
-    <SkillsList>
+    <SkillsList id="skills">
       {skillsData.map(skill => (
         <SkillsSegment>
           {skill.icon}
