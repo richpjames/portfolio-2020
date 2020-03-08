@@ -22,7 +22,7 @@ const Experiences = () => {
               MD I have used TDD to build efficient, secure and well designed
               apps often with a stack that, on starting projects, was new to me.
               I coded products from wireframes to create fully interactive and
-              useful products using Flutter, React, CSS and HTML.{" "}
+              useful products using Flutter, React, CSS and HTML.
             </p>
             <br></br>
             <p>
@@ -45,7 +45,7 @@ const Experiences = () => {
             <br></br>
             <p>
               During my time at MyBuzz I have received training in:<br></br> •
-              Languages: Javascript, Typescript, Dart. <br></br>• Frameworks:
+              Languages: Javascript, Typescript, Dart <br></br>• Frameworks:
               Flutter, React <br></br>• Libraries: X-State, Jest, Cypress, Reach
               Router, Grommet, Material UI <br></br>• Other Tools used: Asana,
               Freshdesk, Slack
@@ -61,20 +61,22 @@ const Experiences = () => {
             <p>
               I attended the full stack coding bootcamp in Manchester that
               taught a practical, industry-led curriculum. All code was TDD and
-              utilised version control (Git) and pair programming throughout.{" "}
+              utilised version control (Git) and pair programming throughout.
             </p>
             <br></br>
             <p>
               During the final 2 weeks of the course I worked in a team of 5 to
               deliver an end-to-end application in an agile environment. Our
               team had daily stand ups and used Trello as a kanban board before
-              presenting our final product at the end of the course.{" "}
+              presenting our final product at the end of the course.
             </p>
             <br></br>
             <p>
               During my time at Northcoders I received training and built
-              applications using: React, HTML, CSS, AWS, Node, Express,
-              PostgreSQL, Chai, Mocha, Cypress, React Native
+              applications using: <br></br>• React <br></br>• HTML <br></br>•
+              CSS <br></br>• AWS <br></br>• Node<br></br> • Express <br></br>•
+              PostgreSQL <br></br>• Chai <br></br>• Mocha <br></br>• Cypress
+              <br></br>• React Native
             </p>
           </>
         }
