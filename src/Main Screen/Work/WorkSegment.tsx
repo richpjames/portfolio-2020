@@ -4,10 +4,6 @@ import styled from "styled-components/macro";
 import colours from "../../Styles/Colours";
 
 const WorkSegmentWrap = styled.div`
-  :nth-child(even) {
-    border-right: 1px solid ${colours.highlight};
-    border-left: 1px solid ${colours.highlight};
-  }
   overflow-y: scroll;
   padding-left: 1.5%;
 `;
