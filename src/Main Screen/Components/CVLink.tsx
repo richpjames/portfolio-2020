@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const CVWrap = styled.span`
+const CVWrap = styled.div`
   font-size: 21px;
-  margin-top: 5px;
+  margin-top: 8vh;
 `;
 
 const CVLink = () => {
