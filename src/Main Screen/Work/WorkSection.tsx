@@ -6,8 +6,9 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import WorkSegment from "./WorkSegment";
 
-const WorkWrap = styled.div`
+const WorkWrap = styled.section`
   display: flex;
+  flex-direction: column;
   width: 85%;
   justify-content: space-evenly;
 `;
@@ -15,14 +16,14 @@ const WorkWrap = styled.div`
 const WorkSection = () => {
   return (
     <WorkWrap>
-      <WorkSegment title="Experience">
+      <WorkSegment title="Skills" underlineLength="75px">
+        <Skills />
+      </WorkSegment>
+      <WorkSegment title="Experience" underlineLength="150px">
         <Experience />
       </WorkSegment>
-      <WorkSegment title="Projects">
+      <WorkSegment title="Projects" underlineLength="110px">
         <Projects />
-      </WorkSegment>
-      <WorkSegment title="Skills">
-        <Skills />
       </WorkSegment>
     </WorkWrap>
   );
