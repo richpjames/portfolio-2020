@@ -11,8 +11,9 @@ const WorkSegmentWrap = styled.div`
   width: 33.3%;
   height: 40vh;
   overflow-y: scroll;
+  padding-left: 1.5%;
 `;
-const Title = styled.h3``;
+const Title = styled.h2``;
 
 interface IProps {
   title: string;
