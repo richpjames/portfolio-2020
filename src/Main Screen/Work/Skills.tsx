@@ -16,7 +16,15 @@ import colours from "../../Styles/Colours";
 const SkillsList = styled.div`
   display: flex;
   flex-wrap: wrap;
+  height: 60vh;
   justify-content: space-between;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+  }
 `;
 
 const Skill = styled.span``;
@@ -32,6 +40,9 @@ const SkillsSegment = styled.div`
   margin-top: 15px;
   margin-bottom: 15px;
   text-align: center;
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+  }
 `;
 
 const Skills = () => {

@@ -7,6 +7,9 @@ const ExperienceWrap = styled.section`
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  @media only screen and (max-width: 600px) {
+    width: 95%;
+  }
 `;
 
 const HeadingWrap = styled.div`

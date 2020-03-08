@@ -3,10 +3,13 @@ import styled from "styled-components/macro";
 import CVLink from "./CVLink";
 
 const BioWrap = styled.section`
-  height: 200px;
+  height: 85vh;
   width: 50%;
-  margin-top: 5%;
+  margin-top: 23vh;
   text-align: center;
+  @media only screen and (max-width: 600px) {
+    margin-top: 25%;
+  }
 `;
 const SecondSection = styled.p`
   margin-top: 2%;
