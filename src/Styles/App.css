@@ -25,6 +25,7 @@ a {
   color: #f3f4f2;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 h1,
@@ -44,7 +45,8 @@ h4 {
 }
 p {
   font-size: 21px;
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  line-height: 99%;
 }
 ul {
   list-style: none;
