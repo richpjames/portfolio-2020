@@ -6,6 +6,11 @@ const IconLink = styled.a`
   :first-child {
     margin-top: 0;
   }
+  @media only screen and (max-width: 600px) {
+    :first-child {
+      margin-top: 10px;
+    }
+  }
 `;
 
 const LinkIcon: React.FC<IconLinkProps> = (props: IconLinkProps) => {
