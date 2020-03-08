@@ -1,5 +1,14 @@
 import React from "react";
-import { Troubleshoot, Test, Archive, Brush, BlockQuote } from "grommet-icons";
+import {
+  Troubleshoot,
+  Test,
+  Archive,
+  Brush,
+  BlockQuote,
+  Group,
+  Plan,
+  Monitor
+} from "grommet-icons";
 import styled from "styled-components/macro";
 
 import colours from "../../Styles/Colours";
@@ -10,54 +19,76 @@ const SkillsList = styled.div`
   justify-content: space-between;
 `;
 
-const Skill = styled.span`
-  margin-top: 5px;
-  margin-bottom: 5px;
+const Skill = styled.span``;
+const SkillTitle = styled.h4`
+  margin-top: 10px;
+  margin-bottom: 10px;
 `;
-
 const SkillsSegment = styled.div`
-  margin-top: 15px;
-  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 25%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
 `;
 
 const Skills = () => {
   return (
     <SkillsList>
-      <SkillsSegment>
-        <BlockQuote color={colours.text} />
-
-        <h3>Languages</h3>
-        <Skill>JavaScript, Typescript, Dart</Skill>
-      </SkillsSegment>
-      <SkillsSegment>
-        <Troubleshoot color={colours.text} />
-
-        <h3>Frameworks</h3>
-        <Skill>React, Flutter, Node, HTML, CSS</Skill>
-      </SkillsSegment>
-      <SkillsSegment>
-        <Test color={colours.text} />
-
-        <h3>Testing</h3>
-        <Skill>Jest, Cypress, Testing Library, Chai, Mocha</Skill>
-      </SkillsSegment>
-      <SkillsSegment>
-        <Archive color={colours.text} />
-
-        <h3>Version Control</h3>
-        <Skill>Git and Github</Skill>
-      </SkillsSegment>
-      <SkillsSegment>
-        <Brush color={colours.text} />
-
-        <h3>Design</h3>
-        <Skill>Adobe Photoshop and XD</Skill>
-      </SkillsSegment>
+      {skillsData.map(skill => (
+        <SkillsSegment>
+          {skill.icon}
+          <SkillTitle>{skill.title}</SkillTitle>
+          <Skill>{skill.items}</Skill>
+        </SkillsSegment>
+      ))}
     </SkillsList>
   );
 };
+const skillsData = [
+  {
+    title: "Languages",
+    items: "JavaScript, Typescript, HTML, CSS, Dart",
+    icon: <BlockQuote color={colours.text} />
+  },
+  {
+    title: "Frameworks",
+    items: "React, Flutter, Node",
+    icon: <Troubleshoot color={colours.text} />
+  },
+  {
+    title: "Designing for",
+    items: "Accessibility, responsiveness, performance",
+    icon: <Monitor color={colours.text} />
+  },
+  {
+    title: "Testing",
+    items: "Jest, Cypress, Testing Library, Chai, Mocha",
+    icon: <Test color={colours.text} />
+  },
+  {
+    title: "Version Control",
+    items: "Git and Github",
+    icon: <Archive color={colours.text} />
+  },
 
+  {
+    title: "Design",
+    items: "Adobe Photoshop and XD",
+    icon: <Brush color={colours.text} />
+  },
+  {
+    title: "Soft skills",
+    items:
+      "Working in an agile environment, customer support, documentation, kanban boards",
+    icon: <Group color={colours.text} />
+  },
+  {
+    title: "Project skills",
+    items: "Architecture, planning, time management, research",
+    icon: <Plan color={colours.text} />
+  }
+];
 export default Skills;
