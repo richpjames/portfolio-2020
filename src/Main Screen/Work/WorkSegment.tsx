@@ -8,22 +8,36 @@ const WorkSegmentWrap = styled.div`
     border-right: 1px solid ${colours.highlight};
     border-left: 1px solid ${colours.highlight};
   }
-  width: 33.3%;
-  height: 40vh;
   overflow-y: scroll;
   padding-left: 1.5%;
 `;
-const Title = styled.h2``;
+const Title = styled.h2<{ underlineLength: string }>`
+  position: relative;
+  margin-bottom: 20px;
+
+  :after {
+    content: "";
+    width: ${props => props.underlineLength || null};
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    border-width: 0 0 2.5px;
+    border-style: solid;
+    border-color: ${colours.highlight};
+    margin-bottom: 7.5px;
+  }
+`;
 
 interface IProps {
   title: string;
+  underlineLength: string;
   children: JSX.Element;
 }
 const WorkSegment: React.FC<IProps> = (props: IProps) => {
-  const { children, title } = props;
+  const { children, title, underlineLength } = props;
   return (
     <WorkSegmentWrap>
-      <Title>{title}</Title>
+      <Title underlineLength={underlineLength}>{title}</Title>
       {children}
     </WorkSegmentWrap>
   );
