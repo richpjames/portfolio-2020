@@ -49,7 +49,6 @@ export const DescriptionWrap = styled.div`
 `;
 
 export const ExternalLinksWrap = styled.nav`
-  margin-left: auto;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -67,8 +66,7 @@ export const InternalLinksWrap = styled.nav`
   display: flex;
   justify-content: space-evenly;
   width: 15%;
-  margin-left: 41%;
-  margin-right: 15%;
+  margin-left: auto;
   @media only screen and (max-width: 600px) {
     display: none;
   }
