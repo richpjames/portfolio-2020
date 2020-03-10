@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { DocumentText } from "grommet-icons";
 
 import CVLink from "./CVLink";
 
@@ -34,7 +33,6 @@ const Bio = () => {
         I love to create elegant solutions to difficult problems
       </SecondSection>
       <CVLink />
-      <DocumentText />
     </BioWrap>
   );
 };
